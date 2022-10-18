@@ -1,12 +1,15 @@
-var input = document.getElementById('input').value*1;
-var result = document.getElementById('result').value*1;
-var inputType = document.getElementById('inputType').value*1;
-var resultType = document.getElementById('resultType').value*1;
+//////////////////////////////////////////////////////////////////////
+//Assignment 1 - Unit Converter
+
+var input = document.getElementById('input');
+var result = document.getElementById('result');
+var inputType = document.getElementById('inputType');
+var resultType = document.getElementById('resultType');
 var inputTypeValue, resultTypeValue;
 
 //adding listener
 
-input.addEventListener("keyup, myResult");
+input.addEventListener("keyup", myResult);
 inputType.addEventListener("change", myResult);
 resultType.addEventListener("change", myResult);
 
@@ -22,7 +25,7 @@ function myResult(){
     //no compare input and resultType value and add formula
 
     if(inputTypeValue === "celsius" && resultTypeValue === "farenheit"){
-        resultType.value = (Number(inputType.value) * 1.8) + 32;
-        document.getElementById('result') = resultType.value;
+        resultType.valuee = (number(inputType.value)) * 1.8 + 32;
+        // document.getElementById('result') = resultType.value;
     }
 }
